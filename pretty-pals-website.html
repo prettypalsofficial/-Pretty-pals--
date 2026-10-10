@@ -1,88 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffedf5">
-  <meta name="description" content="Pretty pals — official TikTok video gallery.">
-  <title>—𓆩Pretty pals-♡💗</title>
-  <style>
-    :root { --pink:#ff4f9a; --pink2:#ffb8d6; --ink:#392434; --paper:#fff8fc; }
-    * { box-sizing:border-box; }
-    body {
-      margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-      color:var(--ink); background:
-        radial-gradient(circle at 10% 0%, #ffe0ee 0, transparent 34%),
-        radial-gradient(circle at 95% 15%, #f4e4ff 0, transparent 28%), var(--paper);
-      min-height:100vh;
-    }
-    .wrap { width:min(920px, 100%); margin:auto; padding:22px 16px 36px; }
-    header { text-align:center; padding:30px 14px 22px; }
-    .heart { font-size:34px; }
-    h1 { font-size:clamp(28px,7vw,48px); margin:8px 0; line-height:1.15; letter-spacing:-1px; }
-    .subtitle { color:#866579; margin:10px auto 20px; max-width:520px; }
-    .pill {
-      display:inline-block; border:1px solid #ffc2dc; background:#fff;
-      border-radius:999px; padding:8px 14px; color:#c52b72; font-weight:700; font-size:14px;
-    }
-    .buttons { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:18px; }
-    .btn {
-      display:inline-block; text-decoration:none; border-radius:999px; padding:12px 18px;
-      font-weight:750; color:white; background:var(--pink); box-shadow:0 7px 18px #ff4f9a30;
-    }
-    .btn.secondary { background:#fff; color:#c52b72; border:1px solid #ffc2dc; box-shadow:none; }
-    .panel {
-      background:#ffffffd9; border:1px solid #ffe0ed; border-radius:24px;
-      padding:18px; box-shadow:0 14px 38px #9d547014; margin:12px 0;
-    }
-    h2 { font-size:20px; margin:2px 0 8px; }
-    .small { color:#806a79; font-size:14px; line-height:1.6; }
-    .tiktok-wrap { display:flex; justify-content:center; overflow:hidden; }
-    .tiktok-embed { margin:0 !important; max-width:720px !important; min-width:288px !important; width:100% !important; }
-    footer { text-align:center; color:#927d8b; font-size:13px; padding:22px 8px 4px; }
-    footer a { color:#c52b72; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#6b35c7">
+<meta name="description" content="Pretty Pals — a cozy place for friends, videos and our community.">
+<title>Pretty Pals ♡</title>
+<style>
+:root{--purple:#6b35c7;--deep:#211047;--lav:#eee2ff;--pink:#fff0fb;--ink:#24143d;--muted:#786b8c;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 5% 0%,#e9d7ff 0,transparent 30%),radial-gradient(circle at 100% 25%,#ffe0f4 0,transparent 28%),linear-gradient(145deg,#fffaff,#f6efff 55%,#fff4fb);min-height:100vh}
+a{color:inherit;text-decoration:none}button,input{font:inherit}.container{width:min(1080px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#fffaf2d9;backdrop-filter:blur(14px);border-bottom:1px solid #e9dcfa}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--deep);font-size:1.15rem}.mini-logo{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#fff,#e4caff);border:2px solid #b77aff;color:#5720b4;box-shadow:0 4px 14px #7b42b52a;font-family:Georgia,serif;font-size:24px}.navlinks{display:flex;gap:18px;align-items:center;font-size:.92rem;font-weight:700;color:#55416f}.navlinks a:hover{color:var(--purple)}.pill{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:12px 18px;background:linear-gradient(135deg,#7d40d8,#4b1d9a);color:#fff;font-weight:800;box-shadow:0 7px 18px #6732b52c;cursor:pointer}.pill.light{background:white;color:var(--purple);border:1px solid #e2d1fa;box-shadow:none}.hero{padding:42px 0 28px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:28px}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid #dfc7ff;border-radius:999px;background:#fff9;font-size:.8rem;font-weight:800;color:#6632b7}.hero h1{font-size:clamp(2.6rem,7vw,5rem);line-height:.98;letter-spacing:-.055em;color:var(--deep);margin:17px 0}.hero h1 span{color:#783ed0}.hero p{font-size:1.05rem;line-height:1.75;color:#6c5b80;max-width:540px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.logo-card{padding:22px;display:flex;justify-content:center;align-items:center}.emblem{width:min(100%,400px);aspect-ratio:1;border-radius:50%;padding:10px;background:linear-gradient(145deg,#fff,#d8aaff,#fff);border:3px solid white;box-shadow:0 20px 55px #58249a25;position:relative}.emblem-inner{width:100%;height:100%;border-radius:50%;border:2px solid #c17cf0;background:radial-gradient(circle at 35% 25%,#fff 0,#fff5ff 40%,#e8d4ff 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}.emblem-inner:before,.emblem-inner:after{content:"✦ · ˚";position:absolute;color:#6e2cc1;font-size:1.5rem;letter-spacing:12px}.emblem-inner:before{top:16%;right:10%;transform:rotate(12deg)}.emblem-inner:after{bottom:15%;left:9%;transform:rotate(-12deg)}.leaf{position:absolute;color:#6b35c7;font-size:2rem}.leaf.left{left:12%;top:22%;transform:rotate(-35deg)}.leaf.right{right:13%;bottom:22%;transform:rotate(30deg)}.emblem-title{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.3rem,8vw,4.5rem);font-weight:900;line-height:.86;letter-spacing:-.06em;color:#5521ae;text-shadow:1px 3px 0 #d7b9ff}.emblem-title small{display:block;color:#25104f;font-size:.92em}.heart{font-size:1.6rem;color:#7135ca;margin-top:12px}
+section{padding:30px 0}.section-head{text-align:center;margin-bottom:22px}.section-head .kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.18em;font-weight:900;color:#8849cc}.section-head h2{font-size:clamp(1.7rem,5vw,2.5rem);margin:7px 0;color:var(--deep)}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#ffffffc9;border:1px solid #e9dcfa;border-radius:22px;padding:22px;box-shadow:0 10px 30px #53218a0c}.card-icon{width:48px;height:48px;border-radius:16px;background:#f0e3ff;display:grid;place-items:center;font-size:1.5rem}.card h3{margin:14px 0 7px;color:var(--deep)}.card p{color:var(--muted);line-height:1.65;font-size:.94rem}.video-tools{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 auto 18px}.video-tools input{width:min(100%,460px);border:1px solid #ddc8f6;border-radius:14px;padding:13px 14px;background:#fff;outline-color:#a777ec}.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.video-card{overflow:hidden;border-radius:20px;border:1px solid #e4d4f8;background:#fff;box-shadow:0 8px 24px #53218a0d}.video-frame{width:100%;aspect-ratio:9/14;background:linear-gradient(145deg,#2b124f,#7c42ce);display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;padding:20px}.video-frame iframe{width:100%;height:100%;border:0}.video-frame video{width:100%;height:100%;object-fit:contain;background:#100a18}.video-placeholder .play{font-size:3rem;display:block}.video-meta{padding:13px}.video-meta strong{display:block}.video-meta small{color:var(--muted)}.community{background:linear-gradient(135deg,#5522a5,#7b43cf 65%,#a96ce0);border-radius:28px;color:#fff;padding:30px;text-align:center;box-shadow:0 18px 42px #58249a28}.community h2{font-size:clamp(1.8rem,5vw,2.6rem);margin:8px 0}.community p{max-width:580px;margin:0 auto 20px;color:#f0e6ff;line-height:1.7}.community .pill{background:white;color:#6029b5;box-shadow:none}.note{font-size:.82rem;color:var(--muted);text-align:center;margin-top:12px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px;margin:10px 0;text-align:left}.field label{font-weight:800;font-size:.86rem}.field input,.field textarea{border:1px solid #ddc8f6;border-radius:12px;padding:12px;background:white;color:var(--ink);width:100%}.field textarea{min-height:88px;resize:vertical}.status{font-size:.86rem;color:#5722a8;margin-top:10px;min-height:1.2em}footer{padding:28px 0 35px;text-align:center;color:#7a698e;font-size:.85rem}footer strong{color:#5722a8}
+@media(max-width:760px){.navlinks{gap:10px}.navlinks a:not(.pill){display:none}.hero{grid-template-columns:1fr;padding-top:28px;gap:0}.hero-copy{text-align:center}.hero p{margin-inline:auto}.actions{justify-content:center}.logo-card{padding:18px}.emblem{max-width:310px}.cards,.video-grid{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr}.community{padding:25px 17px}}
+@media(max-width:430px){.cards,.video-grid{grid-template-columns:1fr}.video-frame{aspect-ratio:9/12}.brand{font-size:1rem}.nav .pill{padding:10px 13px;font-size:.83rem}}
+</style>
 </head>
 <body>
-  <main class="wrap">
-    <header>
-      <div class="heart">♡ 💗 ♡</div>
-      <h1>—𓆩Pretty pals-♡💗</h1>
-      <p class="subtitle">Welcome to our little corner of TikTok ✨<br>Videos, memories, and pretty vibes — all in one place.</p>
-      <span class="pill">Official TikTok Gallery</span>
-      <div class="buttons">
-        <a class="btn" href="https://www.tiktok.com/@pretty_pals_official" target="_blank" rel="noopener noreferrer">♡ Follow on TikTok</a>
-        <a class="btn secondary" href="#videos">Watch videos ↓</a>
-      </div>
-    </header>
-
-    <section class="panel" id="videos">
-      <h2>♡ Our TikTok videos</h2>
-      <p class="small">The profile below is embedded from TikTok. Tap a video to watch it or open the original post on TikTok.</p>
-      <div class="tiktok-wrap">
-        <blockquote class="tiktok-embed"
-          cite="https://www.tiktok.com/@pretty_pals_official"
-          data-unique-id="pretty_pals_official"
-          data-embed-type="creator"
-          style="max-width:720px; min-width:288px;">
-          <section>
-            <a target="_blank" rel="noopener noreferrer"
-              href="https://www.tiktok.com/@pretty_pals_official">@pretty_pals_official</a>
-          </section>
-        </blockquote>
-      </div>
-      <script async src="https://www.tiktok.com/embed.js"></script>
-    </section>
-
-    <section class="panel">
-      <h2>💌 Stay connected</h2>
-      <p class="small">New TikTok posts may take a little while to appear. This official embed displays a selection of recent public videos when TikTok makes the profile available to embed.</p>
-      <div class="buttons">
-        <a class="btn" href="https://www.tiktok.com/@pretty_pals_official" target="_blank" rel="noopener noreferrer">Open TikTok profile ↗</a>
-      </div>
-    </section>
-
-    <footer>Made with ♡ for —𓆩Pretty pals-♡💗<br>Videos are hosted by TikTok and remain subject to TikTok availability.</footer>
-  </main>
+<header><div class="container nav">
+<a class="brand" href="#home"><span class="mini-logo">P</span><span>Pretty Pals <span style="color:#9b66db">♡</span></span></a>
+<nav class="navlinks" aria-label="Main navigation"><a href="#videos">Videos</a><a href="#community">Join GC</a><a href="#about">About</a><a class="pill" href="#community">Join our circle ♡</a></nav>
+</div></header>
+<main>
+<div class="container hero" id="home">
+<div class="hero-copy"><span class="eyebrow">✦ FRIENDSHIP • FUN • MEMORIES ✦</span><h1>Welcome to<br><span>Pretty Pals</span> ♡</h1><p>A little corner of the internet for our favourite people, fun videos and unforgettable group-chat memories. Come in, feel welcome, and be part of our circle!</p><div class="actions"><a class="pill" href="#community">💜 Join Pretty Pals</a><a class="pill light" href="#videos">▶ Watch videos</a></div></div>
+<div class="logo-card"><div class="emblem" role="img" aria-label="Pretty Pals purple emblem logo"><div class="emblem-inner"><span class="leaf left">❧</span><span class="leaf right">❧</span><div class="emblem-title">Pretty<small>Pals</small></div><div class="heart">⌁ ♥ ⌁</div></div></div></div>
+</div>
+<section><div class="container"><div class="section-head"><div class="kicker">OUR LITTLE WORLD</div><h2>What you'll find here ✨</h2><p>Good vibes, sweet memories and friends who feel like family.</p></div><div class="cards">
+<article class="card"><div class="card-icon">🎬</div><h3>Fun Videos</h3><p>Watch our TikTok clips and favourite moments in one cute place.</p></article>
+<article class="card"><div class="card-icon">💌</div><h3>GC Family</h3><p>Meet the community, share laughs and make new friends respectfully.</p></article>
+<article class="card"><div class="card-icon">💜</div><h3>Positive Vibes</h3><p>A friendly space built around kindness, creativity and good memories.</p></article>
+</div></div></section>
+<section id="videos"><div class="container"><div class="section-head"><div class="kicker">WATCH & ENJOY</div><h2>Pretty Pals Videos 🎥</h2><p>Add a TikTok video link to show it here.</p></div>
+<form class="video-tools" id="videoForm"><input id="videoUrl" type="url" placeholder="Paste TikTok video link here…" aria-label="TikTok video link" required><button class="pill" type="submit">＋ Add video</button></form>
+<div class="video-grid" id="videoGrid"><article class="video-card"><div class="video-frame video-placeholder"><div><span class="play">▶</span><strong>Your first video goes here</strong><p>Paste a TikTok link above to add a clip.</p></div></div><div class="video-meta"><strong>Welcome to Pretty Pals</strong><small>Video space</small></div></article></div><p class="note">Tip: use the full public TikTok video URL. Your additions stay in this browser; to publish videos for everyone, add links in the HTML code.</p>
+</div></section>
+<section id="community"><div class="container"><div class="community"><div>✦ OUR FRIENDSHIP CIRCLE ✦</div><h2>Join the Pretty Pals GC 💗</h2><p>Want to be part of our group chat? Tap the button below to join. The invite link can be changed to your real GC invite anytime.</p><a class="pill" id="joinButton" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">💌 Join GC Now</a></div><p class="note">The Join GC button currently uses a placeholder link. Replace it with your actual group invite link.</p></div></section>
+<section id="about"><div class="container"><div class="section-head"><div class="kicker">A LITTLE ABOUT US</div><h2>Made with love ♡</h2><p>Pretty Pals is all about friendship and sharing good moments.</p></div><div class="about-grid"><article class="card"><div class="card-icon">🌷</div><h3>Our motto</h3><p>Be kind, be yourself, respect everyone, and keep the group full of positive energy.</p></article><article class="card"><div class="card-icon">📩</div><h3>Set your GC link</h3><p>Use this small setup box to preview your real invite link in the Join GC button. To make it permanent for everyone, update the link in the HTML file.</p><form id="linkForm"><div class="field"><label for="gcUrl">Your group invite URL</label><input id="gcUrl" type="url" placeholder="https://…"></div><button class="pill" type="submit">Update Join button</button><div class="status" id="linkStatus" role="status"></div></form></article></div></div></section>
+</main>
+<footer><div class="container">Made with <span style="color:#9c4bd5">♥</span> for <strong>Pretty Pals</strong> · Stay kind, stay connected.</div></footer>
+<script>
+const videoForm=document.getElementById('videoForm'),videoUrl=document.getElementById('videoUrl'),videoGrid=document.getElementById('videoGrid');
+function makeVideoCard(url){const card=document.createElement('article');card.className='video-card';const frame=document.createElement('div');frame.className='video-frame';const meta=document.createElement('div');meta.className='video-meta';const title=document.createElement('strong');title.textContent='Pretty Pals video';const small=document.createElement('small');small.textContent=url;meta.append(title,small);
+const match=url.match(/tiktok.com/(?:@[^/]+/video/|embed/)(d+)/i);
+if(match){const iframe=document.createElement('iframe');iframe.src='https://www.tiktok.com/embed/v2/'+match[1];iframe.title='TikTok video';iframe.loading='lazy';iframe.allow='encrypted-media; fullscreen';frame.appendChild(iframe)}
+else if(/.(mp4|webm)(?.*)?$/i.test(url)){const v=document.createElement('video');v.src=url;v.controls=true;v.playsInline=true;frame.appendChild(v)}
+else{frame.textContent='This link may not support embedding. Open it on TikTok: '+url}
+card.append(frame,meta);return card}
+videoForm.addEventListener('submit',e=>{e.preventDefault();const url=videoUrl.value.trim();if(!/^https?:///i.test(url))return; if(videoGrid.querySelector('.video-placeholder'))videoGrid.innerHTML='';videoGrid.prepend(makeVideoCard(url));videoUrl.value=''});
+document.getElementById('linkForm').addEventListener('submit',e=>{e.preventDefault();const url=document.getElementById('gcUrl').value.trim();const status=document.getElementById('linkStatus');if(!/^https?:///i.test(url)){status.textContent='Please enter a valid invite link.';return}const btn=document.getElementById('joinButton');btn.href=url;status.textContent='Join button updated in this browser. Save the link in the HTML to publish it for everyone.'});
+</script>
 </body>
 </html>
